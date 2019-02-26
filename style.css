@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 80px;
+}
+nav .logo{
+    width: 60%;
+    float: left;
+}
+nav .logo h2{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 24px;
+    color: black;
+    margin: 40px 0px 60px 100px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav  .logo span{
+    font-size: 40px;
+    color:#00c9b1;
+    cursor: pointer;
+}
+nav ul{
+    width: 40%;
+    list-style-type: none;
+    float: left;
+}
+nav ul li{
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    margin: 43px 0px 5px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height:24px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0)
+}
+nav ul li:nth-child(1){
+    color: #00c9b1;
+    font-family: 'Open Sans', sans-serif;
+}
+nav ul li:hover{
+    color: #00c9b1;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    transition: all 0.5s
+}
+.content{
+    clear: both;
+}
+.welcome{
+    margin: 150px 50px 0px 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.welcome h4{
+    font-size: 14px;
+    line-height: 2px;
+}
+.welcome h1{
+    display: inline-block;
+    font-size: 40px;
+    line-height: 40px;
+}
+.welcome span{
+    font-size: 40px;
+    color: #00c9b1;
+}
+.welcomep p{
+    color: #666;
+}
+.about{
+    box-sizing:border-box;
+    width: 10%;
+    height:40px;
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #00c9b1;
+    position: relative; 
+    overflow: hidden;
+    border: 2px solid #00c9b1;
+    cursor: pointer;
+}
+.about p{
+    color: white;
+    padding: 8px 0px 0px 27px; 
+    cursor: pointer;
+}
+.overlayleft{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: -200px;
+    bottom: 0;
+    background-color: white;
+    cursor: pointer;
+    color: #00c9b1;
+}
+.about span{
+    font-size: 16px;
+    padding: 8px 0px 0px 27px; 
+    cursor: pointer;
+}
+.about:hover .overlayleft{
+    left: 0;
+    transition: all 0.5s ease-out;
+}
+.about:hover .about p{
+    color: #00c9b1;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.contact{
+    box-sizing:border-box;
+    width: 10%;
+    height:40px;
+    margin-top: 15px;
+    margin-left: 20px;
+    background-color: #00c9b1;
+    position: relative; 
+    overflow: hidden;
+    border: 2px solid #00c9b1;
+    display: inline-block;
+}
+.contact p{
+    color: white;
+    cursor: pointer;
+    padding: 8px 0px 0px 18px;
+}
+.overlayup{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    top: -200px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+}
+.contact span{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 0px 0px 18px;
+}
+.contact:hover .overlayup{
+    cursor: pointer;
+    top: 0;
+    transition: all 0.425s ease-out;
+}
+.animation{
+    width: 2.5%;
+    height: 60px;
+    margin:200px 0px 0px 600px;
+    border: 2px solid #00c9b1;
+    border-radius: 25px;
+    position: relative;
+}
+.animation div{
+    width: 1%;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00c9b1;
+    border: 6px solid #00c9b1;
+    margin-top: 8px;
+    margin-left:9.5px;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+}
+@keyframes animation{
+    0%{left: 0px; top:0px;}
+    50%{left: 0px;top: 30px;}
+    100%{left: 0px; top:0px;}
+}
