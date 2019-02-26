@@ -3,6 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.contentupper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.contentupper img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
 nav{
     width: 100%;
     height: 80px;
@@ -137,8 +148,8 @@ nav ul li:hover{
     width: 100%;
     height: 40px;
     cursor: pointer;
+    top: 0px;
     top: -200px;
-    left: 0;
     bottom: 0;
     background-color: white;
 }
@@ -150,12 +161,13 @@ nav ul li:hover{
 .contact:hover .overlayup{
     cursor: pointer;
     top: 0;
-    transition: all 0.425s ease-out;
+    left: 0px;
+    transition: all 0.5s ease-out;
 }
 .animation{
-    width: 2.5%;
+    width: 2%;
     height: 60px;
-    margin:200px 0px 0px 600px;
+    margin: 20vw 0vw 0vw 49vw;
     border: 2px solid #00c9b1;
     border-radius: 25px;
     position: relative;
@@ -166,8 +178,8 @@ nav ul li:hover{
     border-radius: 50%;
     background-color: #00c9b1;
     border: 6px solid #00c9b1;
-    margin-top: 8px;
-    margin-left:9.5px;
+    margin-top: 0.4vw;
+    margin-left:0.5vw;
     animation-name: animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -178,4 +190,39 @@ nav ul li:hover{
     0%{left: 0px; top:0px;}
     50%{left: 0px;top: 30px;}
     100%{left: 0px; top:0px;}
+}
+.features{
+    height: 500px;
+    clear: both;
+    width: 100%;
+}
+.features h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #2e2e2e;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.features p:nth-child(2){
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #626262;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 26px;
+}
+.features .border{
+    display: inline-block;
+    color: black;
+    text-align: center;
+
+    width: 10%;
+    height: 20px;
+    border-bottom: 2px solid lightseagreen;
+    transform: translate(450%)
 }
