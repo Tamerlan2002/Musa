@@ -1,28 +1,36 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/*my mistake giving margin and padding 0 to ,I learnt later*/
+
+* {
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
-.contentupper{
+
+.contentupper {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-.contentupper img{
+
+.contentupper img {
     width: 100%;
+    height: 700px;
     position: absolute;
     z-index: -1;
 }
-nav{
+
+nav {
     width: 100%;
     height: 80px;
 }
-nav .logo{
+
+nav .logo {
     width: 60%;
     float: left;
 }
-nav .logo h2{
+
+nav .logo h2 {
     display: inline-block;
     font-size: 30px;
     line-height: 24px;
@@ -32,118 +40,139 @@ nav .logo h2{
     cursor: pointer;
     font-weight: 600;
 }
-nav  .logo span{
+
+nav .logo span {
     font-size: 40px;
-    color:#00c9b1;
+    color: #00c9b1;
     cursor: pointer;
 }
-nav ul{
+
+nav ul {
     width: 40%;
     list-style-type: none;
     float: left;
 }
-nav ul li{
+
+nav ul li {
     font-family: 'Open Sans', sans-serif;
     float: left;
     margin: 43px 0px 5px 20px;
     cursor: pointer;
     font-size: 15px;
-    line-height:24px; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0)
+    line-height: 24px;
 }
-nav ul li:nth-child(1){
+
+nav ul li:nth-child(1) {
     color: #00c9b1;
     font-family: 'Open Sans', sans-serif;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     color: #00c9b1;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
     transition: all 0.5s
 }
-.content{
+
+.content {
     clear: both;
 }
-.welcome{
+
+.welcome {
     margin: 150px 50px 0px 100px;
     font-family: 'Open Sans', sans-serif;
 }
-.welcome h4{
+
+.welcome h4 {
     font-size: 14px;
     line-height: 2px;
 }
-.welcome h1{
+
+.welcome h1 {
     display: inline-block;
     font-size: 40px;
     line-height: 40px;
 }
-.welcome span{
+
+.welcome span {
     font-size: 40px;
     color: #00c9b1;
 }
-.welcomep p{
+
+.welcomep p {
     color: #666;
 }
-.about{
-    box-sizing:border-box;
+
+.welcome i {
+    color: #666
+}
+
+.about {
+    box-sizing: border-box;
     width: 10%;
-    height:40px;
+    height: 40px;
     display: inline-block;
     margin-top: 15px;
     background-color: #00c9b1;
-    position: relative; 
+    position: relative;
     overflow: hidden;
     border: 2px solid #00c9b1;
     cursor: pointer;
 }
-.about p{
+
+.about p {
     color: white;
-    padding: 8px 0px 0px 27px; 
+    padding: 8px 0px 0px 23px;
     cursor: pointer;
 }
-.overlayleft{
+
+.overlayleft {
     position: absolute;
     width: 100%;
     height: 40px;
     top: 0;
     left: -200px;
-    bottom: 0;
     background-color: white;
     cursor: pointer;
     color: #00c9b1;
 }
-.about span{
+
+.about span {
     font-size: 16px;
-    padding: 8px 0px 0px 27px; 
+    padding: 8px 0px 0px 27px;
     cursor: pointer;
 }
-.about:hover .overlayleft{
+
+.about:hover .overlayleft {
     left: 0;
     transition: all 0.5s ease-out;
 }
-.about:hover .about p{
+
+.about:hover .about p {
     color: #00c9b1;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
 }
-.contact{
-    box-sizing:border-box;
+
+.contact {
+    box-sizing: border-box;
     width: 10%;
-    height:40px;
+    height: 40px;
     margin-top: 15px;
     margin-left: 20px;
     background-color: #00c9b1;
-    position: relative; 
+    position: relative;
     overflow: hidden;
     border: 2px solid #00c9b1;
     display: inline-block;
 }
-.contact p{
+
+.contact p {
     color: white;
     cursor: pointer;
     padding: 8px 0px 0px 18px;
 }
-.overlayup{
+
+.overlayup {
     position: absolute;
     width: 100%;
     height: 40px;
@@ -153,50 +182,75 @@ nav ul li:hover{
     bottom: 0;
     background-color: white;
 }
-.contact span{
+
+.contact span {
     cursor: pointer;
     font-size: 16px;
     padding: 8px 0px 0px 18px;
 }
-.contact:hover .overlayup{
+
+.contact:hover .overlayup {
     cursor: pointer;
     top: 0;
     left: 0px;
     transition: all 0.5s ease-out;
 }
-.animation{
+
+.animation {
     width: 2%;
     height: 60px;
-    margin: 20vw 0vw 0vw 49vw;
+    margin: 12vw 0vw 0vw 49vw;
     border: 2px solid #00c9b1;
     border-radius: 25px;
     position: relative;
 }
-.animation div{
+
+.animation div {
     width: 1%;
     height: 10px;
     border-radius: 50%;
     background-color: #00c9b1;
     border: 6px solid #00c9b1;
     margin-top: 0.4vw;
-    margin-left:0.5vw;
+    margin-left: 0.4vw;
     animation-name: animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     position: absolute;
 }
-@keyframes animation{
-    0%{left: 0px; top:0px;}
-    50%{left: 0px;top: 30px;}
-    100%{left: 0px; top:0px;}
+
+@keyframes animation {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 0px;
+        top: 30px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
 }
-.features{
-    height: 500px;
+
+.features {
+    height: 550px;
     clear: both;
     width: 100%;
 }
-.features h2{
+
+.features .upper {
+    width: 100%;
+    height: 200px;
+}
+
+.features .upper::after {
+    clear: both;
+}
+
+.features .upper h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
     color: #2e2e2e;
@@ -205,7 +259,8 @@ nav ul li:hover{
     margin-top: 60px;
     margin-bottom: 10px;
 }
-.features p:nth-child(2){
+
+.features .upper p:nth-child(2) {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
@@ -216,13 +271,1125 @@ nav ul li:hover{
     margin: auto;
     padding-bottom: 26px;
 }
-.features .border{
+
+.features .upper .border {
     display: inline-block;
     color: black;
     text-align: center;
-
+    position: relative;
     width: 10%;
-    height: 20px;
     border-bottom: 2px solid lightseagreen;
     transform: translate(450%)
 }
+
+.features .upper .border .fas {
+    position: absolute;
+    top: -7px;
+    left: 60px;
+    transform: rotate(45deg);
+    color: lightseagreen
+}
+
+.features .bottom {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.features .bottom .character {
+    position: relative;
+    width: 25%;
+    height: 200px;
+    margin-left: 3%;
+    float: left;
+    border: 1px solid rgb(230, 225, 225);
+}
+
+.features .bottom>.character h2 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.features .bottom>.character p {
+    color: #626262;
+    text-align: center;
+    transform: translate(15%, 0%);
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.features .bottom .character:nth-child(1) {
+    margin-left: 10%
+}
+
+.features .bottom .character .fas {
+    position: absolute;
+    color: white;
+    transform: translate(1000%, -50%);
+    z-index: +1;
+}
+
+#code {
+    transform: translate(800%, -50%)
+}
+
+.features .bottom .character span {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transform: translate(290%, -50%);
+    z-index: 0;
+}
+
+#secspan {
+    transform: translate(280%, -50%);
+}
+
+.features .bottom .character:hover span {
+    background-color: lightseagreen;
+    transition: all 0.3s
+}
+
+.features .bottom .character:hover {
+    box-shadow: 0px 4px 6px 4px rgb(243, 238, 238);
+    transition: 0.3s
+}
+
+.thirdpart {
+    clear: both;
+    width: 100%;
+    height: 600px;
+    background: #f6f6f6;
+}
+
+.thirdpart .left {
+    width: 40%;
+    margin: 5%;
+    float: left;
+    position: relative;
+}
+
+.thirdpart .left h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #2e2e2e;
+    padding: 20px 0px;
+}
+
+.thirdpart .left p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #626262;
+}
+
+.thirdpart .left .threeicons {
+    position: relative;
+    width: 100%;
+    height: 125px;
+}
+
+.thirdpart .left .threeicons i:nth-child(2) {
+    font-size: 25px;
+    color: black;
+    margin: 62px 12px;
+    z-index: 2;
+    position: absolute;
+    color: white
+}
+
+.thirdpart .left .threeicons .first {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    background-color: lightseagreen;
+}
+
+.thirdpart .left .threeicons p:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.thirdpart .left .threeicons .far {
+    font-size: 25px;
+    color: black;
+    top: 62px;
+    left: 207px;
+    z-index: 2;
+    position: absolute;
+    color: white
+}
+
+.thirdpart .left .threeicons .second {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    background-color: lightseagreen;
+}
+
+.thirdpart .left .threeicons p:nth-child(6) {
+    position: absolute;
+    top: 65px;
+    left: 250px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.thirdpart .left .threeicons i:nth-child(8) {
+    font-size: 25px;
+    color: black;
+    top: 62px;
+    left: 353px;
+    z-index: 2;
+    position: absolute;
+    color: white
+}
+
+.thirdpart .left .threeicons .third {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 340px;
+    background-color: lightseagreen;
+}
+
+.thirdpart .left .threeicons p:nth-child(9) {
+    position: absolute;
+    top: 65px;
+    left: 400px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.thirdpart .left .socmedia {
+    width: 100%;
+    clear: both;
+}
+
+.thirdpart .left .socmedia ul {
+    list-style-type: none;
+}
+
+.thirdpart .left .socmedia ul li {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    margin: 2%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 6px;
+    font-size: 16px;
+}
+
+.thirdpart .left .socmedia ul li:nth-child(1) {
+    margin: 2% 2% 0% 0%;
+}
+
+.thirdpart .left .socmedia ul li:hover {
+    background-color: #00c9b1;
+    transition: all 0.4s;
+    border: 2px solid rgba(0, 0, 0, 0)
+}
+
+.thirdpart .left .socmedia ul li:hover a i {
+    color: white;
+    transition: all 0.3s 0.7s
+}
+
+.thirdpart .left .button {
+    clear: both;
+    position: relative;
+    width: 25%;
+    height: 80px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.thirdpart .left .button a {
+    text-align: center;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 43px;
+    background-color: #00c9b1;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    padding-top: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.thirdpart .left .button .overlayleft2 {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 43px;
+    top: 30px;
+    left: -250px;
+    background-color: white;
+    cursor: pointer;
+    color: #00c9b1;
+    padding-top: 9px;
+    text-align: center;
+    border: 2px solid #00c9b1;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.thirdpart .left .button:hover {
+    color: white
+}
+
+.thirdpart .left .button:hover .overlayleft2 {
+    left: 0px;
+    top: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.thirdpart .right {
+    margin: 5% 5% 0% 0%;
+    width: 45%;
+    float: left;
+}
+
+.thirdpart .right .ability {
+    width: 100%;
+    height: 120px;
+    padding-top: 30px;
+}
+
+.thirdpart .right .ability h3 {
+    font-size: 22px;
+    color: #2e2e2e;
+    padding-bottom: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold
+}
+
+.thirdpart .right .ability p {
+    font-size: 14px;
+    color: #626262;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.thirdpart .right .probars p {
+    letter-spacing: 1px;
+    padding: 0%;
+    margin: 30px 0px 5px 0px;
+}
+
+.thirdpart .right .probars .progress {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    width: 92%;
+}
+
+.thirdpart .right .probars .progress .progress-bar {
+    padding-left: 70%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fourthpart {
+    clear: both;
+    width: 90%;
+    height: 750px;
+    margin: 5%;
+}
+
+.fourthpart .upper h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: black
+}
+
+.fourthpart .upper p:nth-child(2) {
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: #626262;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 3 0px;
+    letter-spacing: 1px;
+    transform: translate(48%, 50%)
+}
+
+.fourthpart .upper .newborder {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 30px 550px;
+    width: 10%;
+    height: 20px;
+    border-bottom: 2px solid #00c9b1
+}
+
+.fourthpart .upper .newborder .fas {
+    position: absolute;
+    top: 11px;
+    left: 60px;
+    transform: rotate(45deg);
+    color: #00c9b1
+}
+
+.fourthpart .bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fourthpart .bottom ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    clear: both;
+    list-style-type: none;
+}
+
+.fourthpart .bottom ul li {
+    border: 1px solid rgb(231, 228, 228);
+    display: block;
+    width: 31%;
+    height: 250px;
+    float: left;
+    margin-top: 30px;
+}
+
+.fourthpart .bottom ul li .fas {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 45px;
+    color: #00c9b1;
+}
+
+.fourthpart .bottom ul li h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: #2e2e2e;
+    margin-top: 15px;
+}
+
+.fourthpart .bottom ul li p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    color: #626262;
+    margin: 0px 50px;
+    padding-top: 10px;
+}
+
+.fourthpart .bottom ul li:hover {
+    transform: translate(0%, -5%);
+    transition: all 0.3s linear;
+}
+
+.fourthpart .bottom ul li:hover i {
+    transform: translate(0%, -20%);
+    transition: 0.3s linear;
+}
+
+.fifthpart {
+    clear: both;
+    background-color: #f6f6f6;
+    height: 1500px;
+}
+
+.fifthpart .container h2 {
+    padding-top: 100px;
+}
+
+.fifthpart .container p {
+    width: 50%;
+}
+
+.fifthpart .newborder {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 30px 500px;
+    width: 10%;
+    height: 20px;
+    border-bottom: 2px solid #00c9b1
+}
+
+.fifthpart .newborder .fas {
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    transform: rotate(45deg);
+    color: #00c9b1
+}
+
+.fifthpart ul {
+    clear: both;
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.fifthpart ul li {
+    display: block;
+    float: left;
+    padding: 3px 18px;
+    cursor: pointer;
+    background-color: #ddd;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fifthpart ul li.active {
+    background-color: #00c9b1;
+    color: white
+}
+
+.fifthpart ul li .hov1 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #00c9b1;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+}
+
+.fifthpart ul li .hov2 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #00c9b1;
+    top: -50px;
+    left: 50%;
+    z-index: 1
+}
+
+.fifthpart ul li:hover .hov1 {
+    top: 0;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.fifthpart ul li:hover .hov2 {
+    top: 0;
+    left: 50%;
+    transition: 0.4s ease;
+}
+
+.fifthpart ul .fas {
+    position: absolute;
+    left: 303px;
+    top: 23px;
+    color: #00c9b1
+}
+
+.fifthpart .col-4 {
+    margin: 0;
+    padding: 0;
+}
+
+.fifthpart .col-4 {
+    margin: 0;
+    padding: 0;
+}
+
+.fifthpart .col-4 .main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.fifthpart .col-4 .main img {
+    width: 100%;
+    height: 100%;
+}
+
+.fifthpart .col-4 .main .hidden {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(0, 255, 255, 0.6);
+    opacity: 0;
+    padding: 18% 20%;
+    transform: scale(0.7, 0.7)
+}
+
+.fifthpart .col-4 .main:hover .hidden {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.3s ease;
+}
+.fifthpart .col-4 .main:hover img{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s ease
+}
+.fifthpart .col-4 .main .hidden .fas {
+    padding-left: 33%;
+    font-size: 35px;
+}
+
+.fifthpart .row .col-12 .button-view {
+    transform: translate(500%, 0%);
+    background-color: #00c9b1;
+    border: 2px solid #00c9b1;
+    position: relative;
+    overflow: hidden;
+}
+
+.fifthpart .row .col-12 .button-view:focus {
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+
+.fifthpart .row .col-12 .button-view::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100px;
+    background-color: white;
+    z-index: -1;
+}
+
+.fifthpart .row .col-12 .button-view:hover {
+    color: #00c9b1;
+}
+
+.fifthpart .row .col-12 .button-view:hover::before {
+    top: 0;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.fifthpart.keepimg {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    padding-bottom: 200px
+}
+
+.fifthpart .keepimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.fifthpart .col-3 .upsec {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    margin: 5% 10%;
+    background-color: rgba(255, 255, 255, 0.651);
+}
+
+.fifthpart .col-3 .upsec i {
+    color: #00c9b1;
+    font-size: 35px;
+    padding-left: 42.5%
+}
+
+.sixpart {
+    clear: both;
+    width: 100%;
+    height: 700px;
+}
+
+.sixpart .uppart p {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.newborder {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 30px 500px;
+    width: 10%;
+    height: 20px;
+    border-bottom: 2px solid #00c9b1
+}
+
+.newborder .fas {
+    position: absolute;
+    top: 11px;
+    left: 51px;
+    transform: rotate(45deg);
+    color: #00c9b1
+}
+
+.sixpart .imgkeeper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 2px solid #00c9b1;
+    z-index: 1;
+}
+
+/* .triangle{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 30px solid black;
+    border-right: 5px solid black;
+    background-color: white;
+} */
+
+.sixpart .col-3 .hidden {
+    position: absolute;
+    width: 89.9%;
+    height: 74.5%;
+    top: 0;
+    left: 14px;
+    background-color: rgba(78, 72, 72, 0.712);
+    opacity: 0;
+    z-index: 2;
+}
+
+.sixpart .col-3 .hidden ul {
+    list-style-type: none;
+    margin-top: 45%;
+    margin-left: 9%
+}
+
+.sixpart .col-3 .hidden ul li {
+    display: block;
+    width: 45px;
+    border-radius: 2px;
+    height: 45px;
+    float: left;
+    border: 1px solid white;
+}
+
+.sixpart .col-3 .hidden ul li i {
+    padding: 25%;
+    font-size: 20px
+}
+
+.sixpart .col-3 .hidden:hover {
+    opacity: 1;
+    transition: 0.2s all ease;
+}
+
+.sixpart .col-3 .hidden ul li:hover {
+    background-color: #00c9b1;
+    border: 1px solid #00c9b1;
+    transition: 0.2s all 0.2s;
+    cursor: pointer;
+}
+
+.client {
+    clear: both;
+    width: 100%;
+    height: 650px;
+    background-color: #f6f6f6
+}
+
+.client p {
+    width: 50%;
+    transform: translate(50%, 5%);
+}
+
+.client .newborder {
+    transform: translate(90%, 0%)
+}
+
+.client .bottom .row .col-4 .card-1 {
+    height: 350px;
+    float: left;
+}
+
+.client .bottom .row .col-4 .card-1 img {
+    margin-top: 10%;
+    width: 50%;
+    height: 100px;
+    border-radius: 50%
+}
+
+.client .bottom .row .col-4 .card-1 {
+    height: 350px;
+    float: left;
+}
+
+.client .bottom .row .col-4 .card-1 img {
+    margin-top: 10%;
+    width: 50%;
+    height: 100px;
+    border-radius: 50%
+}
+
+.somelogos {
+    clear: both;
+    height: 200px;
+    background-color: white
+}
+
+.somelogos img {
+    margin-top: 25px;
+    width: 80%;
+    height: 141px;
+    float: left;
+}
+
+.license {
+    clear: both;
+    height: 800px;
+    background-color: #f6f6f6
+}
+
+.license .upper p {
+    width: 50%;
+    transform: translate(50%, 0%);
+}
+
+.license .container .row .col-4 ul {
+    width: 100%;
+    height: 500px;
+    border: 1px solid transparent;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.license .container .row .col-4 ul li {
+    text-align: center;
+}
+
+.license .container .row .col-4 ul li i {
+    color: #00c9b1
+}
+
+.license .container .row .col-4 ul li .dollar {
+    color: black;
+    font-size: 50px
+}
+
+.license .container .row .col-4 ul li span {
+    font-size: 50px;
+    display: inline-block
+}
+
+.license .container .row .col-4 ul li .month {
+    margin: 0px;
+    padding: 0px;
+    font-size: inherit;
+}
+
+.license .container .row .col-4 ul li p {
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.license .container .row .col-4 ul .button1 {
+    transform: translate(120%, 0%);
+    background-color: #00c9b1;
+    border: 1px solid #00c9b1;
+    position: relative;
+    overflow: hidden;
+}
+
+.license .container .row .col-4 ul .button1:hover {
+    color: #00c9b1
+}
+
+.license .container .row .col-4 ul .button1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border: 1px solid #00c9b1;
+    left: -120px;
+    background-color: white;
+    z-index: -1;
+}
+
+.license .container .row .col-4 ul .button1:hover::before {
+    left: 0;
+    transition: 0.4s all ease;
+}
+
+.license .container .row .col-4 ul:hover {
+    background-color: #00c9b1;
+    transition: 0.2s
+}
+
+.license .container .row .col-4 ul:hover p {
+    color: white;
+    transition: 0.1s;
+}
+
+.license .container .row .col-4 ul:hover span {
+    color: white;
+    transition: 0.1s;
+}
+
+.license .container .row .col-4 ul:hover h6 {
+    color: white;
+    transition: 0.1s;
+}
+
+.license .container .row .col-4 ul:hover i {
+    color: white;
+    transition: 0.1s all ease 0.2s
+}
+
+.license .container .row .col-4 ul:hover .button1 {
+    border: 1px solid white
+}
+
+.license .active {
+    color: white
+}
+
+.license .active li {
+    color: white
+}
+.posts{
+    height: 750px;
+}
+.posts .card:hover{
+    box-shadow: 2px 4px 6px 2px rgba(211, 211, 211, 0.596);
+    transition: 0.2s ease
+}
+.posts span{
+    color: #626262
+}
+.posts .card-body span:hover{
+    color:#00c9b1;
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+.subscribe{
+    height: 700px;
+    background: url(http://habibinfo.com/habibinfo.com/template/musa-preview/musa/images/background/subscribe.jpg) center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.subscribe .email{
+    transform: translate(100%,0%);
+    width: 30%;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    background-color:rgba(214, 208, 208, 0.658);
+    position: relative;
+}
+.subscribe .email:focus{
+    outline:none
+}
+.subscribe .subbut{
+    background-color: #00c9b1;
+    width: 10%;
+    height: 40px;
+    position: relative;
+    transform: translate(297%,-5%);
+    color: white;
+    border-radius: 3px;
+    border:2px solid #00c9b1;
+    overflow: hidden;
+}
+.subscribe .subbut::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border: 1px solid #00c9b1;
+    left: -150px;
+    background-color: white;
+    z-index: -1;
+}
+.subscribe .subbut:hover{
+    background-color: #00c9b1;
+    color: #00c9b1;
+    border: 1px solid #00c9b1
+}
+.subscribe .subbut:hover::before{
+    left: 0;
+    transition: all 0.5s ease
+}
+img{
+    width: 100%
+}
+.map{
+    margin-top: 150px;
+    width: 100%;
+    height: 100%;
+}
+.contacts{
+    width: 100%;
+    height: 600px;
+}
+.contacts address{
+    width: 70%
+}
+.contacts a{
+    text-decoration: underline
+}
+.form1{
+    margin-top: 20px;
+}
+.form1 .name{
+    width: 150%;
+    position: relative;
+}
+.form1 .email{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150%
+}
+.form1 .subject{
+    width: 98.8%;
+    position: relative;
+}
+.form1 .phone{
+    width: 200%;
+    position: absolute;
+    top:0;
+    left: 0
+}
+.form1 input:focus{
+    outline:none;
+    box-shadow: 0 0 0 0 ;
+    border:2px solid #00c9b1
+}
+.form1 textarea{
+    margin-left: 1%;
+    border: 1px solid lightgrey;
+    border-radius:3px
+}
+.form1 textarea:focus{
+    border: 2px solid #00c9b1;
+    outline: none
+}
+.form1 .mybutton{
+    background-color: #00c9b1;
+    border: none;
+    margin-top: 5%;
+    width: 20%;
+    position: relative;
+    border: 2px solid #00c9b1;
+    height: 40px;
+    overflow: hidden;
+    color: white;
+    z-index: 1
+}
+.form1 .mybutton:hover{
+    background-color: #00c9b1;
+    border: 2px solid #00c9b1;
+    color: #00c9b1;
+}
+.form1 .mybutton::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #00c9b1;
+    top: 0;
+    left: -150px;
+    background-color: white;
+    z-index: -1;
+}
+.form1 .mybutton:hover::before{
+    top:0;
+    left: 0;
+    color: #00c9b1;
+    transition: all 0.3s ease;
+}
+footer{
+    width: 100%;
+    border-top: 1px solid lightgrey;
+    clear: both;
+    height: 85px;
+}
+footer h6{
+    transform: translate(0%,170%)
+}
+.active{
+    color: #00c9b1;
+}
+.active:hover{
+    color: #00c9b1;
+    text-decoration: none;
+}
+footer .col-4{
+    margin: 0;
+    padding: 0;
+}
+footer .links ul{
+    transform: translate(20%,120%)
+}
+footer .links ul a{
+    text-decoration: none;
+    color: black;
+}
+footer .links ul a:hover{
+    color: #00c9b1;
+    transition: 0.3s ease;
+    text-decoration: none
+}
+footer .icons ul {
+    list-style-type: none;
+    transform: translate(0%,550%)
+}
+
+footer .icons ul li {
+    display: block;
+    width: 40px;
+    border-radius: 2px;
+    height: 40px;
+    float: right;
+    border: 2px solid black;
+}
+footer .icons ul li i{
+    padding: 25%;
+    font-size: 20px
+}
+footer .icons ul li:hover{
+    background-color: #00c9b1;
+    border: 2px solid transparent;
+    transition: 0.5s ease
+}
+footer .icons ul li:hover i{
+    color: white;
+    transition: all 0.3s ease 0.3s;
+}
+
+
